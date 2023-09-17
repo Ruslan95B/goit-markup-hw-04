@@ -101,6 +101,21 @@ img {
   line-height: 24px;
   letter-spacing: 0.32px;
   text-decoration: none;
+  position: relative;
+}
+
+.current {
+  color: #404bbf;
+}
+.current::after {
+  content: "";
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #404bbf;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
 }
 
 .menu_list_link:hover {
@@ -148,7 +163,17 @@ img {
   background-color: #2e2f42;
   margin: 0 auto;
   padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/hero-img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
 }
+
 .banner_text {
   color: #fff;
   max-width: 496px;
@@ -204,6 +229,18 @@ img {
   width: calc((100% - 72px) / 4);
 }
 
+.icon_box {
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
 .style_section_h {
   color: #2e2f42;
   font-size: 20px;
@@ -237,10 +274,30 @@ img {
 }
 
 .ul_section_thyee {
+  list-style: none;
   display: flex;
+  justify-content: center;
   gap: 24px;
 }
 
+.social_item {
+  width: 40px;
+  height: 40px;
+}
+
+.social_link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_icon {
+  fill: #f4f4fd;
+}
 .style_li {
   background-color: #ffffff;
   list-style: none;
@@ -266,6 +323,7 @@ img {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 8px;
   letter-spacing: 0.02em;
 }
 
@@ -314,24 +372,27 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
- 
+
 .div_section_four {
-  border: 1px solid #E7E9FC;
+  border: 1px solid #e7e9fc;
   border-top: none;
   padding: 32px 16px;
 }
 
 /*Footer*/
+.container_footer {
+  display: flex;
+  padding-left: 156px;
+}
 
 .banner_section_footer {
   background-color: #2e2f42;
   padding: 100px 0;
-
 }
 
 .footer_link {
-display:inline-block;
-margin-bottom: 16px;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo_footer {
   color: #f4f4fd;
