@@ -411,3 +411,21 @@ img {
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
+.footer_padding  {
+padding-right: 120px;
+}
+.footer_h3 {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding-bottom: 16px;
+}
+
+.container_icon {
+display: flex;
+page-break-inside: 120px;
+}
