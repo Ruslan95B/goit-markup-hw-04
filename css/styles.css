@@ -48,6 +48,10 @@ img {
 
 .border_bottom {
   border-bottom: 1px solid #e7e9fc;
+  width: 1158px;
+  margin: 0 auto;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .container_header {
   display: flex;
@@ -102,6 +106,7 @@ img {
   letter-spacing: 0.32px;
   text-decoration: none;
   position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current {
@@ -147,6 +152,7 @@ img {
   padding: 24px 0;
   line-height: 24px;
   letter-spacing: 0.32px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address_list_link:hover {
@@ -204,6 +210,9 @@ img {
   margin-top: 48px;
 }
 
+.transition {
+  background-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .style_buttin:hover {
   background-color: #404bbf;
 }
@@ -262,6 +271,8 @@ img {
 .banner_section_light_bg {
   background-color: #f4f4fd;
   padding: 120px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .banner_text_team_card {
@@ -278,6 +289,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .social_item {
@@ -298,6 +310,15 @@ img {
 .social_icon {
   fill: #f4f4fd;
 }
+
+.menu_list_link:hover {
+  color: #404bbf;
+}
+
+.menu_list_link:focus {
+  color: #404bbf;
+}
+
 .style_li {
   background-color: #ffffff;
   list-style: none;
@@ -388,6 +409,8 @@ img {
 .banner_section_footer {
   background-color: #2e2f42;
   padding: 100px 0;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .footer_link {
@@ -411,10 +434,10 @@ img {
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-.footer_padding  {
-padding-right: 120px;
+.footer_padding {
+  padding-right: 120px;
 }
-.footer_h3 {
+.footer_p {
   color: #fff;
   font-family: "Roboto";
   font-size: 16px;
@@ -426,6 +449,41 @@ padding-right: 120px;
 }
 
 .container_icon {
-display: flex;
-page-break-inside: 120px;
+  display: flex;
+  page-break-inside: 120px;
+}
+
+.ul_section_thyee {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.social_item {
+  width: 40px;
+  height: 40px;
+}
+
+.social_link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social_icon {
+  fill: #f4f4fd;
+}
+
+.menu_list_link:hover {
+  color: #404bbf;
+}
+
+.menu_list_link:focus {
+  color: #404bbf;
 }
