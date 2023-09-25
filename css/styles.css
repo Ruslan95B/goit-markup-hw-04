@@ -438,6 +438,7 @@ img {
 .container_footer {
   display: flex;
   padding-left: 156px;
+  align-items: baseline;
 }
 
 .banner_section_footer {
@@ -451,6 +452,10 @@ img {
   display: flex;
   page-break-inside: 120px;
   align-items: baseline;
+}
+
+.footer_padding {
+  padding-right: 120px;
 }
 
 .footer_link {
@@ -474,9 +479,7 @@ img {
   letter-spacing: 0.02em;
   text-transform: uppercase;
 }
-.footer_padding {
-  padding-right: 120px;
-}
+
 .footer_p {
   color: #fff;
   font-family: "Roboto";
