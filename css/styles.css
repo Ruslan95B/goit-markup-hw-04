@@ -126,6 +126,7 @@ img {
 .menu_list_link:hover,
 .menu_list_link:focus {
   background-color: #31d0aa;
+  color: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 /*address*/
@@ -155,6 +156,7 @@ img {
 .address_list_link:hover,
 .address_list_link:focus {
   background-color: #31d0aa;
+  color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*section 1*/
@@ -302,7 +304,7 @@ img {
 
 .transition_section_thyee:hover,
 .transition_section_thyee:focus {
-  background-color: #31d0aa;
+  background-color: #404bbf; 
 }
 
 .style_li {
@@ -372,14 +374,20 @@ img {
   transform: translateY(100%);
 }
 
+.style_p_focus:hover {
+  transform: translateY(0%);
+}
+
 .item_style_four {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 .item_style_four:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .banner_text_our_portfolio {
@@ -493,7 +501,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(04, 0, 0.2, 1);
+  background-color: 250ms cubic-bezier(04, 0, 0.2, 1);
 }
 
 .social_icon_footer {
